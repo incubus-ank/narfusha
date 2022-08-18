@@ -1,0 +1,12 @@
+details {
+    display: flex;
+
+    text-align: center;
+}
+
+summary {
+    margin: 0;
+    padding: 0;
+
+}
+
