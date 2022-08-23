@@ -1,0 +1,45 @@
+/* Cтиль Header */
+header {
+    display: inline-block;
+
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+
+    overflow: hidden;
+}
+
+/* Cтиль меню*/
+
+.menu-logo {
+    display: inline-block;
+    height: 50px;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+}
+
+  
+nav a {
+    display: inline-block;
+    position: relative;
+
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+
+    color: black;    
+}
+
+nav li {
+    float: right; /*Размещаем список горизонтально для реализации меню*/
+    margin-left: 2.5%; /*Добавляем отступ у пунктов меню*/
+    padding: 0px;
+}
