@@ -1,0 +1,48 @@
+footer {
+    display: grid;
+
+    align-items: center;
+
+    grid-template-columns: repeat(6, 1fr);;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas:  "a a a b b b" "c c d d i i" "f f f g g g";
+
+    margin: 10px;
+    padding: 0px;
+
+    text-align: center;
+}
+
+.search {
+    grid-area: a;
+}
+
+.version-tag {
+    grid-area: b;
+}
+
+.info-1-box {
+    grid-area: c;
+}
+
+.info-2-box {
+    grid-area: d;
+}
+
+.info-3-box {
+    grid-area: i;
+}
+
+.smm {
+    grid-area: f;
+}
+
+.smm img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.advertising {
+    grid-area: g;
+}

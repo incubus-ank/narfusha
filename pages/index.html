@@ -4,8 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <title>NARFUsha</title>
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
         <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <link rel="stylesheet" type="text/css" href="../styles/header.css">
+        <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="../styles/aside.css">
+        <link rel="stylesheet" type="text/css" href="../styles/footer.css">
     </head>
 
     <body>
@@ -13,8 +17,9 @@
         <!-- Header -->
         <header>
             <nav>
+                <a href="#"><img id="menu-logo" src="../images/logo_name.png"></a>
                 <ul>
-                    <li><a href="#">≡</a></li>
+                    <li><a href="#"><span onclick="openNav()">≡</span></a></li>
                     <li><a href="#">Кнопка 1</a></li>
                     <li><a href="#">Кнопка 2</a></li>
                     <li><a href="#">Кнопка 3</a></li>
@@ -24,34 +29,77 @@
         </header>
 
         <!-- Slider menu -->
-        <aside>
-
-        </aside>
+        <aside id="aside">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">СТО</a>
+            <a href="#">Стипендии</a>
+            <a href="#">Общежития</a>
+            <a href="#">Контакты</a>
+        </aside id="aside">
 
         <!-- Page content -->
         <div class="content">
-            <div class="dialog">
-                <div class="speech"> 
+            <div class="speech">
+                <div class="question">
                     Эй, меня зовут Нарфуша! <br>
                     Я твой онлайн-тьютор! <br>
                     Я помогу тебе быстро найти всю 
                     нужную информацию!
                 </div>
-                <div>
-                    <img class="dialog-logo"src="../images/hi_logo.png" alt="Приветствие Нарфуши">
+                <div class="answer">
+                    <a>Я поступил!</a>
+                    <a>Я вперные тут!</a>
                 </div>
-                <div class="btns">
-                    <a class="btn">Я поступил</a>
-                    <a class="btn">Я вперные тут</a>
+                <div class="hi-logo">
+                    <img src="../images/hi_logo.png" alt="Приветствие Нарфуши">
                 </div>
             </div>
         </div>
 
         <!-- Footer -->
         <footer>
-            <img src="../images/Vector 2.svg">
-
+            <div class="search"> 
+                Отдельная благодарность <br>
+                Ассоциации выпускников за деньги <br>
+                которые мы так и не увидели
+            </div>
+            <div class="version-tag">
+                текущий релиз: NARFUsha v0.1
+            </div>
+            <div class="info-1-box">
+                Я родилась <br>
+                и это хорошо
+            </div>
+            <div class="info-2-box">
+                Сегодня ночью был жуткий ливень с грозой <br>
+                и это плохо
+            </div>
+            <div class="info-3-box">
+                САФУ не шарага <br>
+                и это нормально
+            </div>
+            <div class="smm">
+                <a><img src="../images/social network logo/instagram.svg"></a>
+                <a><img src="../images/social network logo/telegramm.svg"></a>
+                <a><img src="../images/social network logo/twitter.svg"></a>
+                <a><img src="../images/social network logo/vkontakte.svg"></a>
+            </div>
+            <div class="advertising"> 
+                Тут могла быть твоя реклама, но не будет наша. <br>
+                Свои возражения, пожелания, предложения ты можешь <br>
+                <a href="#">Засунуть себе куда подальше</a>
+            </div>
         </footer>
+
+        <script>
+            function openNav() {
+                document.getElementById("aside").style.width = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("aside").style.width = "0";
+            }
+            </script>
 
     </body>
 </html>
